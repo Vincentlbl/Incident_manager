@@ -15,12 +15,15 @@
 
     <div class="container mx-auto mt-8">
         <h1 class="text-3xl font-bold mb-4">Ajouter un incident</h1>
-        <form action="/projet_php/public/create" method="POST">
+        <form action="/Incident_manager-main/public/create" method="POST">
             <textarea name="description" class="w-full p-2 border" placeholder="Décrire l'incident..."
                 required></textarea>
             <button type="submit" class="bg-black text-white px-4 py-2 mt-2">Ajouter</button>
         </form>
     </div>
+    <footer class="bg-gray-800 text-white text-center p-4 mt-4 fixed bottom-0 w-full">
+        <p>&copy; <?php echo date("Y"); ?> Vincent. Tous droits réservés.</p>
+    </footer>
 </body>
 
 </html>
