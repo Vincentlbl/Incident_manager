@@ -26,4 +26,4 @@ Avant de commencer, assurez-vous d'avoir les éléments suivants installés sur 
 
 - Utilisez l'option "extraire ici" si vous avez téléchargé une archive ZIP. 
 - Cela permet de s'assurer que les chemins dans le projet fonctionnent correctement.
-- Important : Assurez-vous que le nom du dossier soit Incident_manager-main (ou modifiez les chemins dans les fichiers si vous utilisez un autre nom).
+- Important : Assurez-vous que le nom du dossier soit Incident_manager-main
