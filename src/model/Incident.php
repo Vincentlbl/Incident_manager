@@ -33,4 +33,11 @@ class Incident {
         $stmt = $pdo->prepare('DELETE FROM incidents WHERE id = :id');
         $stmt->execute(['id' => $id]);
     }
+
+    public static function getAllGroupedByStatus() {
+        $pdo = getDBConnection();
+        $stmt = $pdo->query('SELECT * FROM incidents ORDER BY status, created_at DESC');
+        return $stmt->fetchAll();
+    }
+    
 }
