@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modifier un Incident</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    
+
 </head>
 
 <body class="bg-gray-100">
@@ -17,15 +17,18 @@
         <h1 class="text-3xl font-bold mb-4">Modifier un incident</h1>
 
         <?php if (!empty($incident)): ?>
-            <form action="/projet_php/public/update" method="POST">
+            <form action="/Incident_manager-main/public/update" method="POST">
                 <input type="hidden" name="id" value="<?php echo $incident['id']; ?>">
-                <label for="description" class="block text-gray-700 text-sm font-bold mb-2">Description de l'incident</label>
-                <textarea id="description" name="description" class="w-full p-2 border"><?php echo htmlspecialchars($incident['description']); ?></textarea>
+                <label for="description" class="block text-gray-700 text-sm font-bold mb-2">Description de
+                    l'incident</label>
+                <textarea id="description" name="description"
+                    class="w-full p-2 border"><?php echo htmlspecialchars($incident['description']); ?></textarea>
 
                 <label for="status" class="block text-gray-700 text-sm font-bold mb-2 mt-4">Statut</label>
                 <select id="status" name="status" class="w-full p-2 border">
                     <option value="Ouvert" <?php echo ($incident['status'] == 'Ouvert') ? 'selected' : ''; ?>>Ouvert</option>
-                    <option value="En cours" <?php echo ($incident['status'] == 'En cours') ? 'selected' : ''; ?>>En cours</option>
+                    <option value="En cours" <?php echo ($incident['status'] == 'En cours') ? 'selected' : ''; ?>>En cours
+                    </option>
                     <option value="Résolu" <?php echo ($incident['status'] == 'Résolu') ? 'selected' : ''; ?>>Résolu</option>
                 </select>
 
@@ -35,6 +38,10 @@
             <p class="text-red-500">Erreur : Incident introuvable.</p>
         <?php endif; ?>
     </div>
+
+    <footer class="bg-gray-800 text-white text-center p-4 mt-4 fixed bottom-0 w-full">
+        <p>&copy; <?php echo date("Y"); ?> Vincent. Tous droits réservés.</p>
+    </footer>
 
 </body>
 
