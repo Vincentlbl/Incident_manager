@@ -18,8 +18,8 @@ class HomeController {
         echo '<h1 class="text-3xl text-center font-bold mb-4">Bienvenue sur la page d\'accueil du gestionnaire d\'incidents </h1>';
         echo '<p>Cliquez sur le menu pour naviguer vers les autres sections :</p>';
         echo '<ul class="list-disc pl-5">';
-        echo '<li><a href="/projet_php/public/incidents" class="text-blue-500">Voir la liste des incidents</a></li>';
-        echo '<li><a href="/projet_php/public/add" class="text-blue-500">Ajouter un incident</a></li>';
+        echo '<li><a href="/Incident_manager-main/public/incidents" class="text-blue-500">Voir la liste des incidents</a></li>';
+        echo '<li><a href="/Incident_manager-main/add" class="text-blue-500">Ajouter un incident</a></li>';
         echo '</ul>';
         echo '</div>';
         
