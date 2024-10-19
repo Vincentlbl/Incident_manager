@@ -2,7 +2,6 @@
 require_once __DIR__ . '/../../config/database.php';
 
 
-
 class Incident {
     public static function getAll() {
         $pdo = getDBConnection();
