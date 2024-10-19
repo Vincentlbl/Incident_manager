@@ -10,11 +10,12 @@ class HomeController {
         echo '<meta name="viewport" content="width=device-width, initial-scale=1.0">';
         echo '<title>Accueil</title>';
         echo '<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">';
+        echo '<link rel="stylesheet" href="/projet_php/css/style.css">';
         echo '</head>';
         echo '<body class="bg-gray-100">';
         
         echo '<div class="container mx-auto mt-8">';
-        echo '<h1 class="text-3xl text-center font-bold mb-4">Bienvenue sur la page d\'accueil du gestionnaire d\'incidents 🐱‍👤</h1>';
+        echo '<h1 class="text-3xl text-center font-bold mb-4">Bienvenue sur la page d\'accueil du gestionnaire d\'incidents </h1>';
         echo '<p>Cliquez sur le menu pour naviguer vers les autres sections :</p>';
         echo '<ul class="list-disc pl-5">';
         echo '<li><a href="/projet_php/public/incidents" class="text-blue-500">Voir la liste des incidents</a></li>';
