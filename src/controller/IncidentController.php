@@ -3,9 +3,10 @@ require_once __DIR__ . '/../Model/Incident.php';
 
 class IncidentController {
     public function list() {
-        $incidents = Incident::getAll();
+        $incidents = Incident::getAllGroupedByStatus();
         require_once __DIR__ . '/../View/incidents_view.php';
     }
+    
 
     public function addForm() {
         require_once __DIR__ . '/../View/add_incident_view.php';
@@ -59,4 +60,5 @@ class IncidentController {
             echo "ID d'incident invalide.";
         }
     }
+    
 }
