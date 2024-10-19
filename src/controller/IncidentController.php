@@ -16,7 +16,7 @@ class IncidentController {
         $description = $_POST['description'] ?? '';
         if (!empty($description)) {
             Incident::create($description);
-            header('Location: /projet_php/public/incidents');
+            header('Location: /Incident_manager-main/public/incidents');
             exit;
         } else {
             echo "La description de l'incident ne peut pas être vide.";
@@ -43,7 +43,7 @@ class IncidentController {
         $status = $_POST['status'] ?? 'Ouvert';
         if (!empty($id) && !empty($description)) {
             Incident::update($id, $description, $status);
-            header('Location: /projet_php/public/incidents');
+            header('Location: /Incident_manager-main/public/incidents');
             exit;
         } else {
             echo "ID ou description manquants.";
@@ -54,7 +54,7 @@ class IncidentController {
         $id = $_GET['id'] ?? '';
         if (!empty($id)) {
             Incident::delete($id);
-            header('Location: /projet_php/public/incidents');
+            header('Location: /Incident_manager-main/public/incidents');
             exit;
         } else {
             echo "ID d'incident invalide.";
