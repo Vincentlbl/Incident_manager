@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modifier un Incident</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/projet_php/css/style.css">
 
 </head>
 
@@ -29,7 +30,7 @@
                     <option value="Résolu" <?php echo ($incident['status'] == 'Résolu') ? 'selected' : ''; ?>>Résolu</option>
                 </select>
 
-                <button type="submit" class="bg-blue-500 text-white px-4 py-2 mt-4">Mettre à jour</button>
+                <button type="submit" class="bg-black text-white px-4 py-2 mt-4">Mettre à jour</button>
             </form>
         <?php else: ?>
             <p class="text-red-500">Erreur : Incident introuvable.</p>
