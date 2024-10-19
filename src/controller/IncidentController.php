@@ -1,9 +1,6 @@
 <?php
 require_once __DIR__ . '/../Model/Incident.php';
 
-echo '<link rel="stylesheet" href="/projet_php/css/style.css">';
-
-
 class IncidentController {
     public function list() {
         $incidents = Incident::getAll();

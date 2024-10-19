@@ -1,7 +1,6 @@
 <?php
 require_once __DIR__ . '/../../config/database.php';
 
-echo '<link rel="stylesheet" href="/projet_php/css/style.css">';
 
 
 class Incident {
