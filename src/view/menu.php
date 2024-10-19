@@ -1,6 +1,7 @@
 <nav class="bg-gray-800 p-4">
     <div class="container mx-auto flex justify-between items-center">
         <a href="/projet_php/public/" class="text-white text-lg font-bold">Accueil</a>
+        <h1 class="text-white text-2xl font-bold mx-auto">Projet PHP</h1> <!-- Titre centré -->
         <ul class="flex space-x-4">
             <li>
                 <a href="/projet_php/public/incidents" class="text-gray-300 hover:text-white">Liste des incidents</a>
